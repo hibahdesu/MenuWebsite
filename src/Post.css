@@ -1,0 +1,30 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 8px 8px 8px rgba(15, 21, 159, 0.1);
+    border: 2px solid #0f159f;
+}
+.post:hover {
+    background-color: #0f159f;
+    transition: all 0.3s ease;
+}
+.post .post-image {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+.post .post-title {
+    font-size: 1rem;
+    margin: 0;
+    color: #0f159f;
+}
+.post:hover .post-title {
+    color: #fdf4ed;
+}
