@@ -6,10 +6,10 @@
 }
 .App-logo {
   height: 8vmin;
-  pointer-events: none;
+  /* pointer-events: auto; */
 }
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-logo:hover {
     animation: App-logo-spin infinite 20s linear;
   }
 }

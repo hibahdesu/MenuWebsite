@@ -22,19 +22,10 @@
   padding: 1rem 5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 3rem;
 }
 .side-menus {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  gap: 2rem;
-  /* margin: 1rem; */
-  border: 2px solid #0f159f;
-  border-radius: .5rem;
-  flex-wrap: wrap;
   width: 30%;
 }
 .posts {
@@ -42,6 +33,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: .5rem;
   width: 70%;
 }
 

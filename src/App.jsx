@@ -16,7 +16,6 @@ function App() {
           {/* Side Menu */}
           <div className='side-menus'>
             <SideMenu />
-            <SideMenu />
           </div>
           
           {/* Side Menu */}
