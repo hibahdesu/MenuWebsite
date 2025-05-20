@@ -1,7 +1,7 @@
 import './Post.css';
 // import logo from './logo.svg';
 
-export default function Post({title, image}) {
+export default function Post({title, price, image}) {
     // const { title, image} = props;
     return (
         <div className='post'>
@@ -9,6 +9,9 @@ export default function Post({title, image}) {
             <h2 className='post-title'>
                 {title}
             </h2>
+            <p className='post-price'>
+                {price}
+            </p>
         </div>
     )
 }

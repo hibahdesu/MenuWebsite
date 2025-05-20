@@ -25,6 +25,14 @@
     margin: 0;
     color: #0f159f;
 }
+.post-price {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #0f159f;
+}
 .post:hover .post-title {
     color: #fdf4ed;
+}
+.post:hover .post-price {
+    color: #fbc32c;
 }
