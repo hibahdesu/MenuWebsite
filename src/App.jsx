@@ -29,7 +29,7 @@ function App() {
           <div className='posts-container'>
             <Title title={"All items"} />
             <div className='posts'>
-              <Post title={"Classic Pancake"} price={"$4.50"} image="./images/1.png" />
+              <Post title={"Classic Pancake"} price={"$4.50"} image="./images/Classic Pancake.png" />
               <Post title={"Pancake & Coffee"} price={"$6.50"} image="./images/4.png" />
               <Post title={"Bear Pancake"} price={"$5.50"} image="./images/20.png" /> 
               <Post title={"Fresh sandwich"} price={"$6.00"} image="./images/5.png" />
