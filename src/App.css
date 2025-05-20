@@ -13,27 +13,40 @@
   color: #fdf4ed;
 }
 .recipe-section {
-  display: flex;
+  padding: 1rem 5rem;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  align-items: center; */
+  /* width: 100%; */
 }
 .posts-and-side-menu {
-  padding: 1rem 5rem;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  /* align-items: start; */
   gap: 3rem;
+  width: 100%;
 }
-.side-menus {
+.posts-container {
+  width: 70%;
+}
+.side-menu-container {
   width: 30%;
 }
+.posts-container, .side-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: start;
+    align-items: center;
+}
+/* .side-menus {
+  width: 30%;
+} */
 .posts {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: .5rem;
-  width: 70%;
 }
 
