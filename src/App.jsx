@@ -14,16 +14,7 @@ function App() {
       <div className='recipe-section'>
         {/* Posts and Side Menu */}
         <div className='posts-and-side-menu'>
-          {/* Side Menu */}
-          <div className='side-menu-container'>
-            <Title title={"Articles"} />
-            <div className='side-menus'>
-            <SideMenu />
-            </div>
-          </div>
           
-          
-          {/* Side Menu */}
 
           {/* Posts*/}
           <div className='posts-container'>
@@ -57,6 +48,15 @@ function App() {
               <Post title={"Biscuit Cake"} price={"$4.50"} image="./images/Biscuit Cake.png" />
             </div>
           </div>
+
+           {/* Side Menu */}
+          <div className='side-menu-container'>
+            <Title title={"Articles"} />
+            <div className='side-menus'>
+            <SideMenu />
+            </div>
+          </div>
+          {/* Side Menu */}
           
 
         </div>
