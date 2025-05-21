@@ -1,11 +1,10 @@
-
 import './Nav.css';
 
 
 function Nav() {
   return (
     <div className='header'>
-      <img src={"./images/21.png"} className="App-logo" alt="logo" />  
+      <img src={"./images/logo.png"} className="App-logo" alt="logo" />  
       <nav>
         <ul>
           <li><a href="#home">Menu</a></li>
