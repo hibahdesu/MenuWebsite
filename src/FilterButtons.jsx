@@ -1,3 +1,4 @@
+import './FilterButtons.css';
 import FilterButton from "./FilterButton";
 
 export default function FilterButtons({ filters, setFilter }) {
