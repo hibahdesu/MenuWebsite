@@ -1,6 +1,19 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: #0f159f;
+    margin-bottom: 1rem;
+}
+
 .image {
     max-width: 100%;
     height: auto;
-    
     padding: 0.5rem;
 }
