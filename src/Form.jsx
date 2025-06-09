@@ -15,9 +15,11 @@ export default function Form({ onSubmit }) {
     }));
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit(formData);
+    // onSubmit(formData);
+    console.log(formData);
     setFormData({ name: "", email: "", message: "" });
   };
 

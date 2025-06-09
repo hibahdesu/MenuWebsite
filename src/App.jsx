@@ -6,17 +6,22 @@ import Nav from './Nav';
 // import Title from './Title';
 import PostsAndSidemnu from './PostsAndSidemnu';
 import FilterButtons from './FilterButtons';
+import Form from './Form';
+import Hero from './Hero';
 
 function App() {
   return (
     <div className="App">
       <Nav />
       {/* <Header /> */}
+      <Hero /> 
       <FilterButtons 
         filters={['All', 'Breakfast', 'Lunch', 'Dinner']} 
         setFilter={(filter) => console.log(`Filter set to: ${filter}`)}
       />
       <PostsAndSidemnu />
+
+      <Form />
     </div>
   );
 }
