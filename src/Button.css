@@ -1,5 +1,5 @@
 .side-menu-button {
-    background-color: #0f159f;
+    background-color: #0F4C81;
     color: white;
     border: none;
     padding: 1rem;
@@ -11,8 +11,8 @@
 }
 .side-menu-button:hover {
     background-color: transparent;
-    color: #0f159f;
-    border: 2px solid #0f159f;
+    color: #0F4C81;
+    border: 2px solid #0F4C81;
     padding: 1rem;
     border-radius: 1rem;
     cursor: pointer;

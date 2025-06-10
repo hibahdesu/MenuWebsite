@@ -1,4 +1,6 @@
 .post {
+    width: 165px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,10 +9,10 @@
     margin-bottom: 3rem;
     border-radius: 1rem;
     box-shadow: 0 8px 8px 8px rgba(15, 21, 159, 0.1);
-    border: 2px solid #0f159f;
+    border: 2px solid #0F4C81;
 }
 .post:hover {
-    background-color: #0f159f;
+    background-color: #0F4C81;
     transition: all 0.3s ease;
 }
 .post .post-image {
@@ -23,16 +25,16 @@
 .post .post-title {
     font-size: 1rem;
     margin: 0;
-    color: #0f159f;
+    color: #0F4C81;
 }
 .post-price {
     font-size: 1rem;
     margin-top: 1rem;
-    color: #0f159f;
+    color: #0F4C81;
 }
 .post:hover .post-title {
     color: #fdf4ed;
 }
 .post:hover .post-price {
-    color: #fbc32c;
+    color: #ED833A;
 }
