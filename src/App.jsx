@@ -6,8 +6,8 @@ import Nav from './Nav';
 // import Title from './Title';
 import PostsAndSidemnu from './PostsAndSidemnu';
 import FilterButtons from './FilterButtons';
-import Form from './Form';
 import Hero from './Hero';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       />
       <PostsAndSidemnu />
 
-      <Form />
+      <Footer />
     </div>
   );
 }
