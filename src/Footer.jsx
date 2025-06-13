@@ -1,8 +1,9 @@
+import './Main.css';
 import './Footer.css';
 
 export default function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer wrapper">
             <div className="footer-content">
                 <ul className="social-links">
                     <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>

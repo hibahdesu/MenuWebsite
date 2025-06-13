@@ -1,3 +1,4 @@
+import './Main.css'
 import './PostsAndSidemnu.css'
 import Post from './Post';
 import SideMenu from './SideMenu';
@@ -162,7 +163,7 @@ export default function PostsAndSidemnu() {
     ));
         
     return (
-        <div className='recipe-section'>
+        <div className='recipe-section wrapper'>
         {/* Posts and Side Menu */}
         <div className='posts-and-side-menu'>
           {/* Posts*/}
