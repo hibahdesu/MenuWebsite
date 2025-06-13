@@ -6,3 +6,10 @@ body {
 .wrapper {
    padding: 1rem 5rem;
 }
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
