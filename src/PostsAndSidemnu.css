@@ -1,27 +1,45 @@
 .posts-and-side-menu {
   display: flex;
-  justify-content: space-between;
-  /* align-items: start; */
-  gap: 3rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.posts-container,
+.side-menu-container {
   width: 100%;
 }
-.posts-container {
-  width: 70%;
-}
-.side-menu-container {
-  width: 30%;
-}
+
 .posts-container, .side-menu-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: start;
 }
+
 .posts {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+
+  .posts-and-side-menu {
+    flex-direction: row;
+  }
+
+  .posts-container {
+    width: 70%;
+  }
+
+  .side-menu-container {
+    width: 30%;
+  }
 }
 
+@media (min-width: 1200px) {
+  .recipe-section {
+    /* padding: 1rem 5rem; */
+  }
+}
