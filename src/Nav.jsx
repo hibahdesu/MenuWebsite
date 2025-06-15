@@ -1,21 +1,31 @@
 import './Nav.css';
-
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className='header'>
+    <header className="header">
       <div className="logo">
         <img src={"./images/logo.png"} className="App-logo" alt="logo" />
-        <h1 className='logo-text'>RestLife</h1>
+        <Link to="/" className="logo-text">RestLife</Link>
       </div>
-      <nav>
+
+      {/* Toggle Button */}
+      <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation">
+        {menuOpen ? '✖' : '☰'}
+      </div>
+
+      <nav className={menuOpen ? 'open' : ''}>
         <ul>
-          <li><a href="#home">Menu</a></li>
-          <li><a href="#about">Our Story</a></li>
-          <li><a href="#contact">Ask Us</a></li>
+          <li><Link to="/menu" onClick={() => setMenuOpen(false)}>Menu</Link></li>
+          <li><Link to="/about" onClick={() => setMenuOpen(false)}>Our Story</Link></li>
+          <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Ask Us</Link></li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
+
 export default Nav;

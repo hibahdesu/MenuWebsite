@@ -1,31 +1,42 @@
+/* Header layout */
 .header {
-    padding: 1rem 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+  background-color: transparent;
 }
+
+/* Logo section */
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
+
 .App-logo {
   height: 8vmin;
   margin: 0;
 }
+
 .logo-text {
-    font-size: 1.5em;
-    background: linear-gradient(100deg, #ED833A, #0F4C81);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    margin: 0;
+  font-size: 1.5em;
+  background: linear-gradient(100deg, #ED833A, #0F4C81);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-left: 0.5rem;
 }
+
+/* Logo hover animation */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo:hover {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -34,24 +45,73 @@
     transform: rotate(360deg);
   }
 }
+
+/* Desktop nav styles */
 nav {
-    text-align: center;
+  text-align: center;
 }
+
 ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
 }
+
 nav a {
-    text-decoration: none;
-    color: #0F4C81;
-    
-    font-weight: bold;
-    font-size: 1.2em;
+  text-decoration: none;
+  color: #0F4C81;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.2s ease;
 }
+
 nav a:hover {
-    color: #ED833A;
+  color: #ED833A;
+}
+
+/* ===== Responsive Mobile Menu ===== */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #0F4C81;
+  z-index: 1001;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    background-color: #fdf4ed;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.open {
+    max-height: 300px; /* or more if needed */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1.1em;
+    color: #0F4C81;
+  }
 }
