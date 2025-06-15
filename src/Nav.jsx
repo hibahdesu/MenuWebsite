@@ -4,7 +4,10 @@ import './Nav.css';
 function Nav() {
   return (
     <div className='header'>
-      <img src={"./images/logo.png"} className="App-logo" alt="logo" />  
+      <div className="logo">
+        <img src={"./images/logo.png"} className="App-logo" alt="logo" />
+        <h1 className='logo-text'>RestLife</h1>
+      </div>
       <nav>
         <ul>
           <li><a href="#home">Menu</a></li>

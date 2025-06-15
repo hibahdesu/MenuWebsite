@@ -4,9 +4,22 @@
     justify-content: space-between;
     align-items: center;
 }
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .App-logo {
   height: 8vmin;
-  /* pointer-events: auto; */
+  margin: 0;
+}
+.logo-text {
+    font-size: 1.5em;
+    background: linear-gradient(100deg, #ED833A, #0F4C81);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin: 0;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo:hover {
