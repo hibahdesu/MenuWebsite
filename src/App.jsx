@@ -15,7 +15,8 @@ import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
-    <Router>
+    <>
+    
       <Nav />
       <Routes>
         <Route path="/" element={
@@ -33,7 +34,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
