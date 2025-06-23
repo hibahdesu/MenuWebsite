@@ -5,9 +5,9 @@ export default function Menu() {
     return (
         <div>
             <FilterButtons
-                          filters={['All', 'Breakfast', 'Lunch', 'Dinner']} 
-                          setFilter={(filter) => console.log(`Filter set to: ${filter}`)}
-                        />
+                filters={['All', 'Breakfast', 'Lunch', 'Dinner']} 
+                setFilter={(filter) => console.log(`Filter set to: ${filter}`)}
+            />
             <PostsAndSidemnu />
         </div>
     );
