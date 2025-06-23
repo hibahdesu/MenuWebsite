@@ -16,7 +16,8 @@ export default function ArticleDetails() {
         <>
         <h1>Article Details Page</h1>
         <h1>{ article.title }</h1>
-        <p>{ article.image}</p>
+        <img src={article.image} alt="" />
+        <p> {article.content}</p>
         </>
     )
 }
