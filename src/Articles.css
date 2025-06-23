@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     gap: .5rem;
+    cursor: pointer;
 
 } 
 .article-image-container {
