@@ -1,5 +1,6 @@
 import './SideMenu.css';
 import Articles from './Articles';
+import { Link } from 'react-router-dom';
 
 export default function SideMenu() {
     const articles = [
@@ -42,7 +43,10 @@ export default function SideMenu() {
 
     const articleList = articles.map((article) => {
         return (
-            <Articles key={article.id} image={article.image} title={article.title} />
+            <Link key={article.id} to="/ArticleDetails">
+                {/* <Articles key={article.id} image={article.image} title={article.title} /> */}
+                <Articles key={article.id} image={article.image} title={article.title} />
+            </Link>
         )
     });
     return (

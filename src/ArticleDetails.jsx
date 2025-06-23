@@ -1,4 +1,4 @@
-export default function ArticlesDetails({ title, desc}) {
+export default function ArticleDetails({ title, desc}) {
     return (
         <>
         <h1>{ title }</h1>
