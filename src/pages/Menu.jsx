@@ -1,14 +1,14 @@
+import FilterButtons from "../FilterButtons";
+import PostsAndSidemnu from "../PostsAndSidemnu";
+
 export default function Menu() {
     return (
         <div>
-            <h1>Menu</h1>
-            <p>Explore our delicious offerings!</p>
-            <ul>
-                <li>Breakfast</li>
-                <li>Lunch</li>
-                <li>Dinner</li>
-                <li>Desserts</li>
-            </ul>
+            <FilterButtons
+                          filters={['All', 'Breakfast', 'Lunch', 'Dinner']} 
+                          setFilter={(filter) => console.log(`Filter set to: ${filter}`)}
+                        />
+            <PostsAndSidemnu />
         </div>
     );
 }

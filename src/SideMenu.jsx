@@ -1,5 +1,4 @@
 import './SideMenu.css';
-// import Button from './Button';
 import Articles from './Articles';
 
 export default function SideMenu() {

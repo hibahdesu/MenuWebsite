@@ -1,8 +1,6 @@
 import './Main.css';
 import './App.css';
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { Routes, Route } from 'react-router-dom';
 import Nav from './Nav';
 import Hero from './Hero';
 import FilterButtons from './FilterButtons';
@@ -16,7 +14,7 @@ import ContactUs from './pages/ContactUs';
 function App() {
   return (
     <>
-    
+
       <Nav />
       <Routes>
         <Route path="/" element={
