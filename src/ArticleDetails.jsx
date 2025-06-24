@@ -10,7 +10,8 @@ export default function ArticleDetails() {
 
     const article = articlesCon.find((a) => a.id === Number(articleId));
 
-    console.log(article);
+    // console.log(article);
+    console.log(article.image);
     
 
     return (
