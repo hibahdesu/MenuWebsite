@@ -1,18 +1,23 @@
+
 .article-details-container {
     display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
     position: relative;
-    margin: 2em 0;
+    margin: 3em 0;
 }
 
 .detail-img {
     position: absolute;
-    opacity: 0.2;
+    top: 0;
     right: 0;
-    top: -9px;
-    width: 30%;
+    opacity: 0.2;
     height: auto;
+    max-width: 100%;
     z-index: -1;
 }
+
 
 .article-details-title {
     font-size: 2rem;
@@ -22,5 +27,7 @@
 .article-details-content {
     font-size: 1.1rem;
     line-height: 1.6;
-    width: 80%;      
+    max-width: 60%;      
 }
+
+
