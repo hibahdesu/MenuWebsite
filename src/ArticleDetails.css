@@ -2,7 +2,6 @@
 .article-details-container {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-wrap: wrap;
     position: relative;
     margin: 3em 0;
