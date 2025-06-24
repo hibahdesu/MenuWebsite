@@ -20,7 +20,7 @@ export default function ArticleDetails() {
         <div className="article-details-container wrapper">
         <Title title={ article.title }/>
         <img src={article.image} alt="" className="detail-img"/>
-        <p> {article.content}</p>
+        <p className='article-details-content'> {article.content}</p>
         </div>
     )
 }
