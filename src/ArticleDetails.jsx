@@ -13,14 +13,19 @@ export default function ArticleDetails() {
     const article = articlesCon.find((a) => a.id === Number(articleId));
 
     // console.log(article);
-    console.log(article.image);
+    // console.log(article.image);
     
 
     return (
         <div className="article-details-container wrapper">
         <Title title={ article.title }/>
-        <img src={article.image} alt="" className="detail-img"/>
+        <img className="detail-img" src={article.image} alt={article.alt}/>
         <p className='article-details-content'> {article.content}</p>
         </div>
     )
 }
+
+
+
+
+
