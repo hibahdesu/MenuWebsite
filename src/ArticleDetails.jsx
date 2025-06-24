@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
 import { articles } from "./contexts/articlesContext"
+import Title from "./Title";
 
 export default function ArticleDetails() {
     const articlesCon = useContext(articles);
@@ -13,11 +14,11 @@ export default function ArticleDetails() {
     
 
     return (
-        <>
+        <div>
         <h1>Article Details Page</h1>
-        <h1>{ article.title }</h1>
-        <img src={article.image} alt="" />
+        <Title title={ article.title }/>
+        <img src={article.image} alt="" className="detail-img"/>
         <p> {article.content}</p>
-        </>
+        </div>
     )
 }
