@@ -1,31 +1,29 @@
-import './ArticleDetails.css'
-import './Main.css'
+import './ArticleDetails.css';
+import './Main.css';
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
-import { articles } from "./contexts/articlesContext"
+import { articles } from "./contexts/articlesContext";
 import Title from "./Title";
 
 export default function ArticleDetails() {
     const articlesCon = useContext(articles);
     const { articleId } = useParams();
-    // console.log(articleId);
-
     const article = articlesCon.find((a) => a.id === Number(articleId));
 
-    // console.log(article);
-    // console.log(article.image);
-    
+    if (!article) return <p>Article not found.</p>;
 
     return (
-        <div className="article-details-container wrapper">
-        <Title title={ article.title }/>
-        <img className="detail-img" src={article.image} alt={article.alt}/>
-        <p className='article-details-content'> {article.content}</p>
-        </div>
-    )
+        <article className="article-details wrapper">
+            <div className="article-hero-image">
+                <img src={article.bg} alt={article.alt} />
+            </div>
+
+            <div className="article-content-container">
+                <Title title={article.title} />
+                <div className="article-body">
+                    <p>{article.content}</p>
+                </div>
+            </div>
+        </article>
+    );
 }
-
-
-
-
-
