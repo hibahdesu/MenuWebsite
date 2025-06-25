@@ -1,7 +1,7 @@
 .article-details {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     overflow: hidden;
 }
 
@@ -12,9 +12,9 @@
     object-fit: cover;
     display: block;
     border-radius: .5em;
+    margin: 0;
 }
 
-/* Optional: Add overlay text or filters if needed */
 /* .article-hero-image {
     position: relative;
 }
@@ -57,6 +57,9 @@
 
 /* Responsive styles */
 @media (min-width: 768px) {
+    .article-details {
+        gap: 2em;
+    }
     .article-hero-image img {
         max-height: 550px;
     }
