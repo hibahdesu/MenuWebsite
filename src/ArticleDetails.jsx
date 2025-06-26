@@ -10,20 +10,29 @@ export default function ArticleDetails() {
     const { articleId } = useParams();
     const article = articlesCon.find((a) => a.id === Number(articleId));
 
-    if (!article) return <p>Article not found.</p>;
-
-    return (
-        <article className="article-details wrapper">
-            <div className="article-hero-image">
-                <img src={article.bg} alt={article.alt} />
-            </div>
-
-            <div className="article-content-container">
-                <Title title={article.title} />
-                <div className="article-body">
-                    <p>{article.content}</p>
+    // if (article) return <p>Article not found.</p>;
+    
+    if (article) {
+        return (
+            <article className="article-details wrapper">
+                <div className="article-hero-image">
+                    <img src={article.bg} alt={article.alt} />
                 </div>
-            </div>
-        </article>
-    );
+
+                <div className="article-content-container">
+                    <Title title={article.title} />
+                    <div className="article-body">
+                        <p>{article.content}</p>
+                    </div>
+                </div>
+            </article>
+    )
+    } else {
+        return (
+            <>
+                <p>Article not found.</p>
+            </>
+        )
+    }
+    
 }
