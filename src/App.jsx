@@ -140,7 +140,7 @@ function App() {
         <Route path="/about" element={<OurStory />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path='/articledetails/:articleId' element={<ArticleDetails />} />
-        <Route path='*' element={} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
       </articles.Provider>
