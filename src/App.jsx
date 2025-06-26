@@ -139,7 +139,10 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<OurStory />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path='/articledetails/:articleId' element={<ArticleDetails />} />
+        <Route path='/articledetails' element={<ArticleDetails />}>
+          <Route path=':articleId' element={<ArticleDetails />} />
+        </Route>
+        {/* <Route path='/articledetails/:articleId' element={<ArticleDetails />} /> */}
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
