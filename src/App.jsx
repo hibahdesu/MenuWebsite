@@ -12,6 +12,7 @@ import OurStory from './pages/OurStory';
 import ContactUs from './pages/ContactUs';
 import ArticleDetails from './ArticleDetails';
 import { articles } from './contexts/articlesContext';
+import NotFound from './NotFound';
 
 function App() {
   // const articlesData = [
