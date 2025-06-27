@@ -1,5 +1,4 @@
 import './Post.css';
-// import logo from './logo.svg';
 
 export default function Post({title, price, image}) {
     // const { title, image} = props;

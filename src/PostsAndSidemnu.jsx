@@ -168,7 +168,7 @@ export default function PostsAndSidemnu() {
         <div className='posts-and-side-menu'>
           {/* Posts*/}
           <div className='posts-container'>
-            <Title title={"All items"} />
+            <Title title={"Most selling items"} />
             <div className='posts'>
                 {postsList}
               {/* <Post title={"Classic Pancake"} price={"$4.50"} image="./images/Classic Pancake.png" />
