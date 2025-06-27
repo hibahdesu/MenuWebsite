@@ -20,5 +20,12 @@
 }
 .footer-notes {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .footer-notes {
+        flex-direction: row;
+    }
 }
