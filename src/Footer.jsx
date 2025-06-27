@@ -10,19 +10,17 @@ export default function Footer() {
         <footer className="footer wrapper">
             <div className="footer-content">
                 <ul className="social-links">
-                    <li className='flex'>
+                    <li>
                         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                             <InstagramIcon />
                         </a>
                     </li>
-                    <li className='flex'>
-                        
+                    <li>
                         <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                             <XIcon />
                         </a>
                     </li>
                     <li>
-                        
                         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                             <FacebookIcon />
                         </a>
