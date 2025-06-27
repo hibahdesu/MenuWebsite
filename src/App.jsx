@@ -14,6 +14,7 @@ import ArticleDetails from './ArticleDetails';
 import { articles } from './contexts/articlesContext';
 import NotFound from './NotFound';
 import ArticlesList from './ArticlesList';
+import ArticlesLayout from './ArticlesLayout';
 
 function App() {
   // const articlesData = [
@@ -141,7 +142,7 @@ function App() {
         <Route path="/about" element={<OurStory />} />
         <Route path="/contact" element={<ContactUs />} />
         {/* <Route path="/articles" element={<ArticlesList />} /> */}
-        <Route path='/articles'>
+        <Route path='/articles' element={<ArticlesLayout />}>
           <Route index element={<ArticlesList />} />
           <Route path=':articleId' element={<ArticleDetails />} />
         </Route>
