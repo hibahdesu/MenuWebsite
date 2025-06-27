@@ -46,7 +46,7 @@ export default function SideMenu() {
 
     let articleList = articlesCon.map((article) => {
         return (
-            <Link key={article.id} to={`/articleDetails/${article.id}`}>
+            <Link key={article.id} to={`/articles/${article.id}`}>
                 {/* <Articles key={article.id} image={article.image} title={article.title} /> */}
                 <Articles key={article.id} image={article.image} title={article.title} />
             </Link>
